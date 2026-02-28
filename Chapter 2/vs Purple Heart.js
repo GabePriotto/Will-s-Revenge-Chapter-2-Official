@@ -106,7 +106,7 @@ function transitionToPhaseTwo() {
 
     const centralImage = document.getElementById("center-img");
     const video = document.createElement("video");
-    video.src = "deboche.mp4";
+    video.src = "Deboche.mp4";
     video.autoplay = true;
     video.style.width = "500px";
     video.style.height = "350px";
