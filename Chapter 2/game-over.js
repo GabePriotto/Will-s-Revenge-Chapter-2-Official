@@ -20,5 +20,8 @@ const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
 document.getElementById("gameOverText").textContent = fraseAleatoria;
 
 function voltar() {
-    window.history.back();
+    window.history.go(-1);
+    setTimeout(() => {
+        location.reload();
+    }, 100); 
 }
