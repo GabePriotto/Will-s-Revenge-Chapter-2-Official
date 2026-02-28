@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("Dark Rooms Level Up.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.uau {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.img {
+    width: 300px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    display: none;
+}
+
+.textInput {
+    height: 30px;
+    background-color: rgb(180, 132, 0);
+    color: black;
+    border-radius: 5px;
+    border: solid 2px rgb(85, 85, 85);
+    padding: 5px;
+    display: none;
+}
+
+input::placeholder {
+    color: rgb(59, 59, 59);
+}
+
+.continue {
+    background-color: rgb(39, 39, 255);
+    height: 32px;
+    width: 90px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+h3 {
+    color: red;
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    display: none;
+}
+
+.reto {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 1200px;
+    height: 220px;
+    background-color: black;
+    border: solid white 3px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.normalMan {
+    color: white;
+}
+
+.help {
+    position: fixed;
+    bottom: 40px;
+    right: 100px;
+}
+
+#dialButton {
+    font-family: "Sedan SC", serif;
+    padding: 7px 15px;
+    border-radius: 5px;
+    border-bottom: solid 5px black;
+    background-color: rgb(206, 206, 206);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#dialButton:hover {
+    background-color: red;
+    color: white;
+}
+
+.span {
+    color: orange;
+}

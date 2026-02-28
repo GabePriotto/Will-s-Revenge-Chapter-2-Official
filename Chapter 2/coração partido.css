@@ -1,0 +1,108 @@
+body {
+    background-image: url("purple center.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+
+#targetImage {
+    width: 60vw;
+    height: 80vh;
+    max-width: 400px;
+    max-height: 600px;
+    object-fit: fill;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.img {
+    text-align: center;
+    margin-top: 3vh;
+    padding: 0 10px;
+}
+
+.alert {
+    text-align: center;
+    margin-top: 5vh;
+    animation: pisca 1s infinite ease-in-out;
+}
+
+@keyframes pisca {
+    0% { color: rgb(0, 153, 255); }
+    50% { color: yellow; }
+    100% { color: rgb(0, 153, 255); }
+}
+
+#dialogueBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    pointer-events: none;
+}
+
+#dialogueBox h1 {
+    text-align: center;
+    color: red;
+    text-shadow: 5px 5px 10px black;
+    max-width: 90vw;
+}
+
+#newImage {
+    display: none;
+    max-width: 85vw;
+    height: auto;
+    max-height: 60vh;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.img2 {
+    text-align: center;
+    margin-top: 4vh;
+}
+
+@media (max-width: 768px) {
+    #targetImage {
+        max-width: 95vw;
+        max-height: 60vh;
+    }
+
+    #newImage {
+        max-width: 95vw;
+        max-height: 55vh;
+    }
+
+    #dialogueBox h1 {
+        font-size: 18px;
+    }
+
+    .alert {
+        font-size: 14px;
+    }
+}

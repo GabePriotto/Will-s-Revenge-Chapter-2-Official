@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="andar-5.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Quinto Andar</title>
+    <script src="andar-5.js" defer></script>
+</head>
+<body>
+    <div class="principal">
+        <img id="princ-img" src="velho pescador morgan.jpg" alt="">
+        <div id="infoArea">
+            <p>Moedas: <span id="coinCount">60</span></p>
+            <p>Peixes Pescados: <span id="fishCount">0</span></p>
+            <a href="elevator-again.html">
+            <button>Voltar ao Elevador</button>
+            </a>
+            <button onclick="fishTime()" id="list">Lista de Pesca</button>
+            <div id="fishList">
+                <h3>Lista de Pesca</h3>
+                <h4>Marque os peixes que já pescou</h4>
+                <label>Peixe Faro <input type="checkbox"> </label><br>
+                <label>Apresentador Peixe Hulk <input type="checkbox"> </label><br>
+                <label>Peixe Fausto <input type="checkbox"></label><br>
+                <label>Tony Peixamos <input type="checkbox"></label><br>
+                <label>Peixe Núcleo <input type="checkbox"></label><br>
+                <label>Michael Fish Jackson <input type="checkbox"></label><br>
+                <label>Peixe Véio Careca <input type="checkbox"></label><br>
+                <label>Peixe Papa <input type="checkbox"></label><br>
+                <label>Peixe Smith <input type="checkbox"></label><br>
+                <label>Peixe Lendário Patatá Dourado <input type="checkbox"></label><br>
+            </div>
+        </div>
+        <div>
+          <button id="fishButton">Jogar a isca</button>
+        </div>
+        <div id="gameArea">
+            <div id="forceBar"></div>
+            <p>clique na barra para pescar!</p>
+        </div>
+    </div>
+    <div id="fishResult">
+        <img id="fishImage" src="" alt="Peixe">
+        <h2 id="fishName"></h2>
+        <p id="fishRarity"></p>
+        <h3 id="porcentage"></h3>
+        <p id="fishDescription"></p>
+        <button id="sellButton">Vender Peixe</button>
+    </div>
+    <div class="armazenador">
+        <button onclick="local()" id="local">O que é esse lugar?</button>
+        <button onclick="what()" id="you">Quem é você?</button>
+        <button onclick="pescar()" id="pescar">Pescar</button>
+        <a href="elevator-again.html">
+            <button id="voltar">Voltar ao elevador</button>
+        </a>
+    </div>
+    <div class="reto" id="reto">
+        <p class="normalMan" id="normalMan"></p>
+        <h3 id="fishman"></h3>
+    </div>
+    <div class="messageBox" id="messageBox">
+        <img src="Sorte de Principiante (conquista 5 ).png" alt="">
+        <p class="text"><strong><span class="gold">Conquista Desbloqueada!</span></strong><br><br>Sorte de Principiante</p>
+    </div>
+    <div class="help">
+        <button class="down" onclick="dialogo()" id="dialButton">Diálogo</button>
+    </div>
+    <audio autoplay loop src="Legend of Zelda_ Ocarina of Time OST - Zora's Domain.mp3" id="musica"></audio>
+</body>
+</html>

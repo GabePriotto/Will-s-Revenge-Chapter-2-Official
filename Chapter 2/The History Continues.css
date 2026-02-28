@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("FLUX-SS25_Sense-of-Un-Place-Hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;  
+    
+
+    position: relative;
+    overflow-x: hidden;
+}
+.title {
+    color: rgb(255, 253, 253);
+    font-family: "Jersey 10", sans-serif;
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+margin-top: 30vh;
+}
+
+.sub {
+    color: rgb(255, 238, 238);
+    font-family: "Jersey 10", sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+

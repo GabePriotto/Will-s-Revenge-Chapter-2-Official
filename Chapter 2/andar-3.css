@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("ruinas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#dialButton {
+    font-family: "Sedan SC", serif;
+    padding: 7px 15px;
+    border-radius: 5px;
+    border-bottom: solid 5px black;
+    background-color: rgb(206, 206, 206);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#dialButton:hover {
+    background-color: red;
+    color: white;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
+}
+
+.principal img {
+    max-width: 90%;
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.reto {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 1200px;
+    height: 200px;
+    background-color: black;
+    border: solid white 3px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.demon {
+    color: red;
+    text-align: center;
+}
+
+.help {
+    position: fixed;
+    bottom: 40px;
+    right: 100px;
+}
+.normalMan {
+    color: white;
+}
+
+.text {
+    color: white;
+    text-align: center;
+}
+
+.gold {
+    color: rgb(255, 196, 0);
+    margin-left: 10px;
+}
+
+.messageBox {
+    position: fixed;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: solid 1px white;
+    width: 300px;
+    max-width: 90%;
+    border-radius: 10px;
+    background-color: black;
+    display: none;
+    padding: 10px;
+}
+
+.messageBox.visible {
+    display: flex;
+    bottom: 240px;
+}
+
+.messageBox img {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.work,
+.works,
+.word,
+.world {
+    height: 60px;
+    width: 120px;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+.works,
+.work {
+    visibility: hidden;
+}
+
+.word,
+.world {
+    display: none;
+}
+
+div {
+    text-align: center;
+}
+
+#prompt {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    border: solid 1px white;
+    display: none;
+    width: 250px;
+    max-width: 90%;
+}
+
+.irritante {
+    margin-top: 20px;
+}
+
+#enredo {
+    color: white;
+    font-family: sans-serif;
+    display: none;
+    text-shadow: 3px 3px 20px black;
+    margin-bottom: 10px;
+}
+
+#resposta {
+    padding: 10px;
+    border: solid 1px white;
+    background-color: rgb(0, 109, 0);
+    border-radius: 6px;
+    cursor: pointer;
+    display: none;
+}
+
+#resposta:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: rgb(173, 0, 0);
+}

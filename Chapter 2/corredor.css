@@ -1,0 +1,85 @@
+body {
+    background-image: url("The DEFINITIVE Dark Rooms.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+}
+
+button {
+    font-family: "Sedan SC", serif;
+    padding: 7px;
+    border-radius: 5px;
+    border-bottom: solid 5px black;
+    background-color: rgb(206, 206, 206);
+    font-size: 15px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: red;
+    color: white;
+}
+
+.uau .alt {
+    height: 250px;
+    width: 180px;
+    border-radius: 10px;
+    z-index: -5;
+    display: none;
+}
+
+.uau {
+    display: inline;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 40px;
+    position: relative;
+    z-index: 2;
+}
+.reto {
+    background-color: black;
+    border: solid white 3px;
+    border-radius: 10px;
+    height: 250px;
+    max-width: 1250px;
+    width: 97%;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.down {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+
+.help {
+    text-align: end;
+}
+
+.span {
+    color: orange;
+}
+
+.normalMan {
+    color: white;
+}
+
+.onix,
+.duno,
+.trino {
+    width: 80px;
+    margin-top: 20px;
+    display: none;
+}

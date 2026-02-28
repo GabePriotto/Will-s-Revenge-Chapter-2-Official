@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="elevator.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Elevator</title>
+    <script src="elevator-again.js" defer></script>
+</head>
+<body>
+
+    <div class="principal">
+        <div class="tabela again">
+
+            <button class="number" onclick="nop()">1</button>
+            <button class="number" onclick="nop()">2</button>
+            <button class="andar" onclick="sip()">3</button>
+
+            <button class="number" onclick="nop()">4</button>
+            <button class="andar" onclick="sop()">5</button>
+            <button class="number" onclick="nop()">6</button>
+
+            <button class="number" onclick="nop()">7</button>
+            <button class="number" onclick="nop()">8</button>
+            <button class="andar" onclick="sup()">9</button>
+
+        </div>
+    </div>
+
+    <div class="reto">
+        <p class="normalMan" id="normalMan"></p>
+    </div>
+
+    <div class="messageBox" id="messageBox">
+        <img src="Sherlock Holmes (conquista 3).png" alt="">
+        <p class="text">
+            <strong>
+                <span class="gold">Conquista Desbloqueada!</span>
+            </strong>
+            <br><br>
+            Sherlock Holmes
+        </p>
+    </div>
+
+    <div class="help">
+        <button class="down" onclick="dialogo()" id="dialButton">Diálogo</button>
+    </div>
+
+    <audio autoplay loop src="Elevator Music - So Chill.mp3" id="musica"></audio>
+    <audio src="Elevator Door Closing Sound Effect.mp3" id="musica1"></audio>
+    <audio src="Long Elevator.mp3" id="musica2"></audio>
+    <audio src="Elevator Door And Ding Sound Effect(2).mp3" id="musica3"></audio>
+
+</body>
+</html>

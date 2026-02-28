@@ -1,0 +1,27 @@
+.sorry {
+    font-family: "Jersey 10", sans-serif;
+    text-align: center;
+    color: red;
+    font-size: 90px;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+body {
+    background-image: url("minecraft\ night.webp");
+}
+.no {
+    text-align: center;
+    color: red;
+    font-family: "Jersey 10", sans-serif;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+button {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 20px;
+    background-color: rgb(197, 197, 132);
+}
+div {
+    text-align: center;
+}

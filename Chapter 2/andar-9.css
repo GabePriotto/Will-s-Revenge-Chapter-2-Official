@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("O Nono Andar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+    justify-content: center;  
+    position: relative;
+    overflow-x: hidden;
+}
+
+#inform {
+    opacity: 0;
+    animation: fadeEffect 15s ease-in-out forwards;
+    color: red;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    background-color: black;
+    padding: 20px;
+    border: solid 3px white;
+    border-radius: 10px;
+    text-align: center;   
+    margin: 0 auto;           
+    word-wrap: break-word;  
+}
+
+@keyframes fadeEffect {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.principal {
+    display: none;
+    justify-content: center;
+    margin-top: 120px;
+    width: 100%;
+}
+
+.reto {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 1200px;
+    height: 220px;
+    background-color: black;
+    border: solid white 3px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.normalMan {
+    color: white;
+}
+
+#angel {
+    color: aqua;
+}
+
+.help {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 100px;
+}
+
+#dialButton {
+    font-family: "Sedan SC", serif;
+    padding: 7px 15px;
+    border-radius: 5px;
+    border-bottom: solid 5px black;
+    background-color: rgb(206, 206, 206);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#dialButton:hover {
+    background-color: red;
+    color: white;
+}
+
+span {
+    color: orange;
+}
+
+#theme {
+    text-align: center;
+    width: 100%;
+}

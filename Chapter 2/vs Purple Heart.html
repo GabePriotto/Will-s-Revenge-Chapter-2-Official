@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Rubik+Pixels&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vs Purple Heart.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Now!</title>
+    <script src="vs Purple Heart.js" defer></script>
+</head>
+<body>
+    <audio id="music" src="Mega Man 2 - Dr. Wily's Castle.mp3" loop autoplay></audio>
+    <h1 class="monster-name">Coração Roxo</h1>
+    <h3 class="monster-pod">O Núcleo das Dark Rooms</h3>
+    <div class="flex">
+        <div class="monster-status">
+            <p class="red-title">ENEMY STATUS</p>
+            <p class="enemy-status">HP:</p>
+            <p class="enemy-status" id="numbers-m">80</p>
+            <p class="enemy-status">Weapon: Hands</p>
+            <p class="enemy-status">Atual Attack: 25</p>
+        </div> <!--your status-->
+        <div class="center">
+    <img id="center-img" src="coração roxo.jpeg" alt="">
+        </div><!--center-->
+    <div class="text-align">
+        <div class="your-status">
+            <p class="inform"><strong><em>YOUR STATUS</em></strong></p>
+            <p class="informations">Your HP:</p>
+            <p class="informations" id="numbers">100</p>
+            <p class="informations">Weapon: Old Shield</p>
+            <p class="informations">Atual Attack: 14</p>
+        </div> <!--your status-->
+        </div><!--text-align-->
+    </div><!--flex-->
+    <div class="buttons" id="output">
+    <button onclick="attack(), check()" id="sword">Atacar</button>
+    <button onclick="rest()" id="shield">Descansar</button>
+    </div>
+    <div class="align">
+    <div class="text-box">
+        <h3 id="angel"></h3>
+        <p id="scary"></p>
+        <h3 id="monster"></h3>
+    </div>
+    </div>
+</body>
+</html>

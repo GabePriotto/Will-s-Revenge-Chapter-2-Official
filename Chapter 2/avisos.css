@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: monospace;
+    color: white;
+}
+
+.informações {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.will-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 50px;
+}
+
+.separação {
+    max-width: 600px;
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.title span {
+    color: red;
+    text-shadow: 3px 3px 5px red;
+}
+
+.text {
+    margin: 20px 0;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.separação img {
+    width: 120px;
+    animation: fone 1.5s ease-in-out alternate infinite;
+}
+
+@keyframes fone {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(20px); }
+}
+
+.best {
+    color: red;
+    text-shadow: 3px 3px 5px red;
+    margin-top: 10px;
+}
+
+.inesperado {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.inesperado button {
+    padding: 10px 25px;
+    height: 45px;
+    border-radius: 5px;
+    border: solid 1px red;
+    color: red;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.inesperado button:hover {
+    transform: scale(1.1);
+}

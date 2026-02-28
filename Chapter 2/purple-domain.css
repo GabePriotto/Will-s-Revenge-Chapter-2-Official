@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("purple center.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#dialButton {
+    font-family: "Sedan SC", serif;
+    padding: 7px 15px;
+    border-radius: 5px;
+    border-bottom: solid 5px black;
+    background-color: rgb(206, 206, 206);
+    font-size: 15px;
+    cursor: pointer;
+    z-index: 1;
+    position: fixed;
+    bottom: 60px;
+    right: 100px;
+    
+}
+
+#dialButton:hover {
+    background-color: red;
+    color: white;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.reto {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 1200px;
+    min-height: 220px;
+    background-color: black;
+    border: solid white 3px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.normalMan {
+    color: white;
+}
+
+.help {
+    text-align: end;
+}
+
+span {
+    color: orange;
+}
+
+#angel {
+    color: aqua;
+}
+
+#demon {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 1200px) {
+    .reto {
+        width: 90%;
+        min-height: 200px;
+    }
+    .principal {
+        margin-top: 100px;
+    }
+    #dialButton {
+        right: 30px;
+        bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .reto {
+        width: 95%;
+        min-height: 180px;
+        padding: 10px;
+    }
+    .principal {
+        margin-top: 80px;
+    }
+    #dialButton {
+        right: 20px;
+        bottom: 30px;
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .reto {
+        width: 95%;
+        min-height: 160px;
+        padding: 8px;
+        font-size: 14px;
+    }
+    .principal {
+        margin-top: 60px;
+    }
+    #dialButton {
+        right: 15px;
+        bottom: 20px;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}

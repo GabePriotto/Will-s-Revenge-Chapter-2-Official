@@ -1,0 +1,68 @@
+body {
+    background-image: url("minecraft night.webp");
+    background-size: cover; /* não distorce */
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.title {
+    color: red;
+    font-family: "Jersey 10", sans-serif;
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-top: 40px; /* levemente ajustado */
+}
+
+.sub {
+    color: red;
+    font-family: "Jersey 10", sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.div {
+    text-align: center;
+    margin-top: 40px;
+}
+
+button {
+    display: block; /* garante formato retrato */
+    margin: 20px auto; /* centraliza */
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 20px;
+    background-color: rgb(197, 197, 132);
+    cursor: pointer;
+}
+
+.sim {
+    margin-top: 20px;
+}
+
+.down {
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    margin-top: 100px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+.title:hover {
+    color: grey;
+}
+
+.sup {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
